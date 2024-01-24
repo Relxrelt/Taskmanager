@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatever</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/header.css">
+    </head>
+    <body>
+        <div class="header">
+
+            <img onclick="openTaskList()" class="listmenu"
+                src="icons/listmenu.png">
+            <img onclick="openDoneList()" class="donemenu"
+                src="icons/donemenu.png">
+            <img onclick="openProfileView()" class="usermenu"
+                src="icons/usermenu.png">
+
+            <button class="logoutbutton" onclick="logOut()">LOG OUT</button>
+        </div>
+        <div class="siteContainer">
+            <div class="todoListContainer">
+                <p class="welcomeUserTaskList">HERE ARE YOUR PENDING TASKS</p>
+                <div class="innerContainerTodo">
+                    <div class="addTask">
+                        <input class="addtaskname" type="text"
+                            placeholder="Task name">
+                        <button onclick="addTask()" class="addtaskbutton">Add
+                            Task</button>
+                    </div>
+                    <div class="taskList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="doneTodoListContainer">
+                <p class="welcomeUserTaskList">HERE ARE YOUR FINISHED TASKS</p>
+                <div class="innerContainerTodo">
+                    <div class="addTask">
+                        <button onclick="clearHistory()"
+                            class="clearHistoryButton">ClearHistory</button>
+                    </div>
+                    <div class="doneTaskList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="viewprofiledata">
+                <p class="viewprofWelcome">USER:</p>
+                <div class="viewprofiledatainner">
+                    <p class="viewprofdone">DONE TASKS </p>
+                    <p class="viewprofpending">PENDING TASKS </p>
+                </div>
+
+            </div>
+            <div class="loginContainer">
+                <p class="welcome">WELCOME TO PROJECTER</p>
+                <input class="username" type="text" placeholder="Username">
+                <input class="email" type="email" placeholder="Email">
+                <input class="password" type="password"
+                    placeholder="Password">
+                <div class="loginButtonContainer">
+                    <button class="regButton" id="slbutton"
+                        onclick="createUser()">Sign
+                        up</button>
+                    <p class="anotheroption">Already have account?</p>
+                </div>
+
+            </div>
+        </div>
+        <script src="dist/bundle.js"></script>
+        <script src="more.js"></script>
+    </body>
+</html>

@@ -1,0 +1,190 @@
+body {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 1200px;
+}
+
+.loginContainer {
+  display: flex;
+
+  flex-direction: column;
+  width: 1200px;
+  align-items: center;
+}
+.viewprofiledata {
+  display: none;
+  flex-direction: column;
+}
+.viewprofiledatainner {
+  display: flex;
+  flex-direction: column;
+}
+.viewprofWelcome {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.viewprofdone,
+.viewprofpending {
+  font-size: 35px;
+}
+.doneTodoListContainer {
+  width: 1000px;
+  display: none;
+  flex-direction: column;
+  border: solid;
+
+  border-width: 4px;
+}
+.todoListContainer {
+  width: 1000px;
+  display: none;
+  flex-direction: column;
+  border: solid;
+
+  border-width: 4px;
+}
+
+.innerContainerTodo {
+  display: flex;
+  flex-direction: row;
+  border-top: solid;
+}
+.addTask {
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  margin-bottom: 20px;
+}
+.addtaskname {
+  margin-top: 20px;
+  width: 148px;
+  padding: 8px;
+}
+.clearHistoryButton,
+.addtaskbutton {
+  margin-top: 10px;
+  width: 169px;
+  color: white;
+  background-color: rgb(10, 146, 224);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+.doneTaskList,
+.taskList {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+}
+
+.task {
+  border-left: solid;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  border-bottom: solid;
+}
+
+.taskEdits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.taskname {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border-color: black;
+  margin-right: 30px;
+  font-size: 60px;
+}
+
+.removetaskbutton,
+.edittaskbutton,
+.taskdonebutton {
+  margin-bottom: 15px;
+  padding: 8px;
+  width: 130px;
+  margin-right: 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.removetaskbutton {
+  background-color: red;
+}
+.edittaskbutton {
+  background-color: rgb(97, 180, 248);
+}
+.taskdonebutton {
+  background-color: rgb(12, 182, 12);
+}
+.siteContainer {
+  display: flex;
+  justify-content: center;
+}
+.username,
+.email,
+.password {
+  margin-bottom: 8px;
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.logButton {
+  padding: 8px;
+  width: 155px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(98, 187, 98);
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.15s;
+}
+
+.regButton {
+  padding: 8px;
+  width: 155px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(241, 137, 52);
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.15s;
+}
+
+.welcome {
+  font-size: 60px;
+  white-space: nowrap;
+  color: rgb(62, 62, 245);
+  font-weight: bold;
+}
+
+.anotheroption {
+  display: inline;
+  margin-left: 10px;
+  color: black;
+  text-decoration: underline;
+}
+
+.regButton:hover {
+  opacity: 0.8;
+}
+
+.regButton:active {
+  opacity: 0.6;
+}

@@ -1,0 +1,45 @@
+.header {
+  height: 60px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(75, 119, 240);
+  z-index: 100;
+  align-items: center;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.7);
+}
+.listmenu,
+.donemenu,
+.usermenu {
+  height: 100%;
+}
+
+.listmenu:hover,
+.donemenu:hover,
+.usermenu:hover {
+  background-color: rgb(118, 171, 250);
+}
+.logoutbutton {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.2s;
+  display: none;
+}
+
+.logoutbutton:hover {
+  opacity: 0.85;
+}
+
+.logoutbutton:active {
+  opacity: 0.6;
+}
